@@ -1,0 +1,16 @@
+domain: my.domain
+layout:
+- go.kubebuilder.io/v3
+projectName: porch-controller
+repo: github.com/mortent/porch-controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: my.domain
+  group: webapp
+  kind: Guestbook
+  path: github.com/mortent/porch-controller/api/v1
+  version: v1
+version: "3"
